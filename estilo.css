@@ -13,13 +13,7 @@
     --escritura: white;
 
 
-    --text-yellow: yellow;
-    --second-color: gray;
-    --section2: rgba(117, 139, 165, 0.974);
-    --robin: green;
-    --batgirl: violet;
-    --redhood: red;
-    --nightwind: blue;
+    --letra: blue;
 
 }
 
@@ -37,7 +31,7 @@
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     top: 0;
@@ -47,6 +41,12 @@ header{
     background-color: var(--escritura);
     
 }
+#logoPagina{
+    width: 10%;
+}
+.logo{
+    width: 3%;
+}
 
 .navBar,
 .navBar-list{
@@ -55,16 +55,26 @@ header{
     align-items: center;
     padding-right: 60px;
 }
+
+.navBar{
+    width: 100%;
+}
+
 .navBar-list{
     gap: 20px;
 }
 .letra{
-    font-family: 'Concert One';
+    
+    color: var(--letra);
 }
 
 .navBar img{
     width: 7%;
     
+}
+
+#menu-toggle{
+    display: none;
 }
 
 main{
@@ -79,11 +89,12 @@ main{
 }
 
 .hero{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: var(--background);
     border-radius: 15px;
+    max-width: 1200px;
 }
 
 .hero-card{
@@ -161,6 +172,7 @@ main{
     padding: 40px;
     width: 100%;
     background-color: var(--background2);
+    flex-wrap: wrap;
 }
 
 .actuales{
@@ -308,7 +320,13 @@ main{
     grid-template-rows: repeat(6,200px);
     border-radius: 10px;
     gap: 5px;
+    flex-wrap: wrap;
     background-color: var(--background2);
+}
+.play h2{
+    color: var(--escritura);
+    text-align: center;
+    display: none;
 }
 /*play*/
 .play:nth-child(1){
@@ -489,4 +507,84 @@ main{
 }
 footer{
     text-align: center;
+}
+
+@media (max-width: 576px){
+        
+    
+    
+    
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid var(--primary);
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        border-color: var(--escritura);
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        
+        display: none;
+        }
+        .hero-card{
+            display: none;
+        }
+        #menu-toggle:checked+.navBar-list {
+            display: flex;
+        }
+        .letra{
+            color: var(--escritura);
+        }
+        .Producto-destacado{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .play{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .play h2{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+          
+        }
+        .productos-destacado-tamaño{
+            width: 400px;
+            height: 400px;
+        }
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+           
+        }
+
+        .contacto-titulo{
+            width: 100%;
+        }
+
+        .contacto-info{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+        }
 }
