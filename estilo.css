@@ -42,18 +42,19 @@ header{
     
 }
 #logoPagina{
-    width: 10%;
+    width: 100px;
 }
 .logo{
-    width: 7%;
+    width: 30px;
 }
 
 .navBar,
 .navBar-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     padding-right: 60px;
+    
 }
 
 .navBar{
@@ -77,7 +78,9 @@ header{
 #menu-toggle{
     display: none;
 }
-
+.menu-label{
+    display: none;
+}
 main{
     margin-top: 10px;
     padding: 70px;
@@ -106,7 +109,7 @@ main{
     width: 450px;
     padding-right: 45px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 .hero-info{
     padding: 45px;
@@ -546,7 +549,9 @@ footer{
         .letra{
             color: var(--escritura);
         }
-
+        .menu-label{
+            display: fle;
+        }
         .hero{
     
             display: flex;
