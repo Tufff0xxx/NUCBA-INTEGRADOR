@@ -550,7 +550,7 @@ footer{
             color: var(--escritura);
         }
         .menu-label{
-            display: fle;
+            display: flex;
         }
         .hero{
     
