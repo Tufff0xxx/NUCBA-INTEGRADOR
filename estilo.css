@@ -58,6 +58,7 @@ header{
 
 .navBar{
     width: 100%;
+    
 }
 
 .navBar-list{
@@ -85,7 +86,6 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-width: ;
     background-color: var(--background2);
 }
 
@@ -95,7 +95,7 @@ main{
     justify-content: space-around;
     background-color: var(--background);
     border-radius: 15px;
-    width: 80%;
+    width: 100%;
     
 }
 
@@ -314,7 +314,7 @@ main{
 }
 
 .play{
-    margin: 0 auto;
+   
     
     display: grid;
     place-content: center;
@@ -461,7 +461,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    width: 100%;
     padding-bottom: 50px;    
 
     
@@ -546,6 +546,54 @@ footer{
         .letra{
             color: var(--escritura);
         }
+
+        .hero{
+    
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--background);
+            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            
+        }
+        
+
+        .consolas{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .carts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: var(--second-color);
+            padding: 40px;
+            width: 100%;
+            background-color: var(--background2);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+
+        .destacados{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center  ;
+            padding: 40px;
+            width: 100%;
+            
+        }
+
         .Producto-destacado{
             display: flex;
             flex-direction: column;
@@ -572,13 +620,13 @@ footer{
         .contacto{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            
             justify-content: center;
             align-items: center;
-            
-            max-width: 412px;
+            width: 100%;
            
         }
+        
 
         .contacto-titulo{
             width: 100%;
@@ -590,6 +638,11 @@ footer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 80%;
         }
+        #mapa{
+            width: 275px;
+            height: 275px;
+        }
+       
 }
