@@ -45,7 +45,7 @@ header{
     width: 10%;
 }
 .logo{
-    width: 3%;
+    width: 7%;
 }
 
 .navBar,
@@ -523,7 +523,7 @@ footer{
         top: 65px;
         left: 5%;
         right: 5%;
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         background-color: var(--background);
         border: 2px solid var(--primary);
@@ -567,6 +567,7 @@ footer{
             text-align: center;
             padding: 40px;
             width: 100%;
+            gap: 20px;
         }
 
         .carts{
@@ -588,9 +589,10 @@ footer{
             align-items: center;
             flex-direction: column;
             justify-content: space-around;
-            text-align: center  ;
+            text-align: center;
             padding: 40px;
             width: 100%;
+            gap: 20px;
             
         }
 
