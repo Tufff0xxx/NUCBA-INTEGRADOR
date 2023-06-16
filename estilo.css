@@ -92,7 +92,7 @@ main{
     background-color: var(--background2);
 }
 
-.hero{
+#hero{
     
     display: flex;
     justify-content: space-around;
@@ -152,7 +152,7 @@ main{
     width: 30px;
     height: 25px;
 }
-.consolas{
+#consolas{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -161,11 +161,11 @@ main{
     width: 100%;
 }
 
-.consolas h3{
+#consolas h3{
     font-size: 75px;
     font-family: 'Concert one';
 }
-.consolas p{
+#consolas p{
     font-size: 25px;
 }
 
@@ -282,7 +282,7 @@ main{
     height: 200px;
 }
 
-.destacados{
+#destacados{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -291,11 +291,11 @@ main{
     width: 100%;
     
 }
-.destacados h1{
+#destacados h1{
     font-family: 'Concert One';
     font-size: 75px;
 }
-.destacados p{
+#destacados p{
     
     font-size: 25px;
 }
@@ -457,7 +457,7 @@ main{
     width: 400px;
 }
 
-.contacto{
+#contacto{
     margin-top: 10px;
     padding-top: 20px;
     display: flex;
@@ -514,6 +514,63 @@ footer{
     text-align: center;
 }
 
+/*FORMULARIO DE REGISTRO*/
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--background2);
+}
+
+.datos-pv{
+    margin-top: 40px;
+    display: flex;
+    gap: 120px;
+    padding: 50px 75px;
+    background-color: var(--background3);
+}
+
+#titulo{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--background3);
+}
+.videojueguiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--background3);
+}
+.botones{
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    
+}
+.botones :first-child{
+    width: 100px;
+    height: 60px;
+}
+
 @media (max-width: 576px){
         
     
@@ -552,7 +609,7 @@ footer{
         .menu-label{
             display: flex;
         }
-        .hero{
+        #hero{
     
             display: flex;
             justify-content: space-around;
@@ -564,7 +621,7 @@ footer{
         }
         
 
-        .consolas{
+        #consolas{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -589,7 +646,7 @@ footer{
         }
         
 
-        .destacados{
+        #destacados{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -624,7 +681,7 @@ footer{
             width: 400px;
             height: 400px;
         }
-        .contacto{
+        #contacto{
             display: flex;
             flex-direction: column;
             
