@@ -926,7 +926,11 @@ footer{
             gap: 20px;
             width: 100%;
             background-color: var(--background2);
+            
         }
+        
+
+
         #datos-personales{
             display: flex;
             flex-direction: column;
@@ -934,6 +938,8 @@ footer{
             text-align: center;
             gap: 20px;
             background-color: var(--background3);
+            width: 100%;
+            
         }
         #datos-player{
             display: flex;
@@ -942,6 +948,17 @@ footer{
             text-align: center;
             gap: 20px;
             background-color: var(--background3);
+            width: 100%;
+        }
+        .datos-pv{
+            margin-top: 40px;
+            display: flex;
+            gap: 120px;
+            padding: 50px 75px;
+            background-color: var(--background3);
+            width: 100%;
+            
+            
         }
        
 }
