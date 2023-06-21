@@ -627,7 +627,7 @@ footer{
 #LOGIN{
     background-color: var(--escritura);
     margin-top: 25px;
-    
+    width: 100%;
     text-align: center;
 }
 #LOGIN h1{
@@ -638,7 +638,10 @@ footer{
     margin-top: 25px;    
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--background2);
+    width: 100%;
 }
 
 .login-datos{
@@ -647,9 +650,11 @@ footer{
     background-color: var(--background3);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     align-items: center;
     gap: 30px;
+    
 }
 
 .login-boton{
