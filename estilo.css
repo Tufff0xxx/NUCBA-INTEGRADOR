@@ -707,6 +707,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 15px;
     }
 
     .carts{
@@ -719,7 +720,8 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 90%;
+        width: 100%;
+        gap: 15px;
     }
     .play{
         display: flex;
