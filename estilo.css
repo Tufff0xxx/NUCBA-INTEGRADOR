@@ -573,10 +573,11 @@ footer{
 .datos-pv{
     margin-top: 40px;
     display: flex;
+    justify-content: center;
     gap: 120px;
     padding: 50px 75px;
     background-color: var(--background3);
-    width: auto;
+    width: 100%;
 }
 
 #titulo{
@@ -588,18 +589,22 @@ footer{
 #datos-personales{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     gap: 20px;
     background-color: var(--background3);
+    width: 100%;
 }
 #datos-player{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     gap: 20px;
     background-color: var(--background3);
+    width: 100%;
 }
 .botones{
     padding: 20px;
@@ -951,7 +956,10 @@ footer{
         .datos-pv{
             margin-top: 40px;
             display: flex;
-            gap: 120px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
             padding: 50px 75px;
             background-color: var(--background3);
             
