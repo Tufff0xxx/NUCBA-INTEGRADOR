@@ -949,7 +949,7 @@ footer{
         #datos-personales{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             text-align: center;
             gap: 20px;
             background-color: var(--background3);
@@ -958,10 +958,11 @@ footer{
         #datos-player{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             text-align: center;
             gap: 20px;
             background-color: var(--background3);
+            
             
         }
         .datos-pv{
@@ -970,10 +971,10 @@ footer{
             justify-content: center;
             align-items: center;
             text-align: center;
-            gap: 10px;
+            gap: 5px;
             padding: 50px 75px;
             background-color: var(--background3);
-            
+            flex-wrap: wrap;
             
         }
        
