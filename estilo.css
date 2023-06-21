@@ -28,6 +28,7 @@
 
 
 
+
 header{
     width: 100%;
     display: flex;
@@ -40,6 +41,20 @@ header{
     position: sticky;
     background-color: var(--escritura);
     
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+
+}
+
+#logoPagina{
+    animation: rotar 4s infinite;
 }
 
 html{
@@ -169,6 +184,7 @@ main{
 .boton{
     width: 30px;
     height: 25px;
+    
 }
 #consolas{
     display: flex;
@@ -654,7 +670,7 @@ footer{
     align-items: center;
     align-items: center;
     gap: 30px;
-    
+    width: 100%;
 }
 
 .login-boton{
@@ -797,7 +813,7 @@ footer{
         
         
 }   
-
+}
 
 
 @media (max-width: 576px){
