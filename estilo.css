@@ -41,6 +41,12 @@ header{
     background-color: var(--escritura);
     
 }
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
 #logoPagina{
     width: 100px;
 }
@@ -71,7 +77,7 @@ header{
 }
 
 .navBar img{
-    width: 7%;
+    width: 30px;
     
 }
 
@@ -81,6 +87,11 @@ header{
 .menu-label{
     display: none;
 }
+
+.menu-icon{
+    width: 150px;
+}
+
 main{
     margin-top: 10px;
     padding: 70px;
@@ -98,7 +109,7 @@ main{
     justify-content: space-around;
     background-color: var(--background);
     border-radius: 15px;
-    width: 70%;
+    width: 100%;
     
 }
 
@@ -106,10 +117,10 @@ main{
     max-width: 80%;
 }
 .hero-card img{
-    width: 450px;
+    width: 500px;
     padding-right: 45px;
     margin-right: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .hero-info{
     padding: 45px;
@@ -148,6 +159,13 @@ main{
 .juego{
     width: 80px;
 }
+
+#select{
+    width: 90px;
+    padding-bottom: 10px;
+    height: 54px;
+}
+
 .boton{
     width: 30px;
     height: 25px;
@@ -157,7 +175,8 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px;
+    text-align: center;
+    padding: 40px 20px;
     width: 100%;
 }
 
@@ -325,6 +344,7 @@ main{
     grid-template-rows: repeat(6,200px);
     border-radius: 10px;
     gap: 5px;
+    width: 100%;
     
     background-color: var(--background2);
 }
@@ -338,7 +358,30 @@ main{
     
     grid-column: 1/3;
     grid-row: 1/3;
+ 
+    
+
 }
+
+
+/*#ps{
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}*/
+
+@keyframes scaleUp {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2);
+    }
+  }
 .play :nth-child(3){
     
     grid-column: 3/4;
@@ -486,7 +529,7 @@ main{
     display: flex;    
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 100%;
     background-color: var(--background);
     color: var(--escritura);
     
@@ -523,6 +566,7 @@ footer{
     align-items: center;
     text-align: center;
     gap: 20px;
+    width: 100%;
     background-color: var(--background2);
 }
 
@@ -532,6 +576,7 @@ footer{
     gap: 120px;
     padding: 50px 75px;
     background-color: var(--background3);
+    width: auto;
 }
 
 #titulo{
@@ -540,7 +585,7 @@ footer{
     flex-direction: column;
     text-align: center;
 }
-.personales{
+#datos-personales{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -548,7 +593,7 @@ footer{
     gap: 20px;
     background-color: var(--background3);
 }
-.videojueguiles{
+#datos-player{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -570,6 +615,167 @@ footer{
     width: 100px;
     height: 60px;
 }
+
+
+/*------------------LOGIN*---------------------*/
+
+#LOGIN{
+    background-color: var(--escritura);
+    margin-top: 25px;
+    
+    text-align: center;
+}
+#LOGIN h1{
+    font-size: 50px;
+}
+
+.login-area{
+    margin-top: 25px;    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background2);
+}
+
+.login-datos{
+    padding: 30px;
+    margin: 100px 400px;
+    background-color: var(--background3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-boton{
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.login-boton-tam{
+    width: 70px;
+    height: 40px;
+}
+
+
+
+@media  (max-width: 992px){
+
+    
+    .navBar-list{
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid var(--primary);
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        border-color: var(--escritura);
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+    .letra{
+        color: var(--escritura);
+    }
+
+    #menu-toggle:checked+.navBar-list {
+        display: flex;
+    }
+    
+    .menu-label{
+        display: flex;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: column;
+    }
+    #card-image{
+        display: none;
+    }
+    
+    #consolas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .carts{
+        display: flex;
+        gap: 50px;
+    }
+    #destacados{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    .play{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        
+    }
+    .productos-destacado-tamaño{
+        width: 400px;
+        height: 400px;
+    }
+
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+    }
+    
+
+    .contacto-titulo{
+        width: 100%;
+    }
+
+    .contacto-info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    #mapa{
+        width: 275px;
+        height: 275px;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+        background-color: var(--background2);
+    }
+}   
+
+
 
 @media (max-width: 576px){
         
@@ -707,6 +913,33 @@ footer{
         #mapa{
             width: 275px;
             height: 275px;
+        }
+
+        .datos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            width: 100%;
+            background-color: var(--background2);
+        }
+        #datos-personales{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px;
+            background-color: var(--background3);
+        }
+        #datos-player{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px;
+            background-color: var(--background3);
         }
        
 }
