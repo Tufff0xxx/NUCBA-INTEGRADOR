@@ -548,7 +548,7 @@ main{
     width: 100%;
     background-color: var(--background);
     color: var(--escritura);
-    gap: 200px;
+    gap: 50px;
     
 }
 .contacto-info-direccion{
