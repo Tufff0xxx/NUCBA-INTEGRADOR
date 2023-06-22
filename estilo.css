@@ -543,11 +543,12 @@ main{
     padding-left: 30px;
     padding-right: 30px;
     display: flex;    
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     background-color: var(--background);
     color: var(--escritura);
+    gap: 200px;
     
 }
 .contacto-info-direccion{
